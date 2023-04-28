@@ -7,7 +7,7 @@ public class AgendamentoDto {
 
 	private int IdAgendamento;
 	
-	private String veiculo_placa;
+	private String veiculo_Placa;
 	
 	private String dataAgendamento;
 	

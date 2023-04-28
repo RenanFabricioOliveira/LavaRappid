@@ -37,7 +37,7 @@ public class AgendamentoServiceImpl implements IAgendamentoService {
 		cliente.setCpf(veiculoDto.getCliente_cpf());
 
 		Veiculo veiculo = new Veiculo();
-		veiculo.setPlaca(agendamentoDto.getVeiculo_placa());
+		veiculo.setPlaca(agendamentoDto.getVeiculo_Placa());
 		veiculo.setCliente_cpf(cliente);
 		agendamento.setVeiculo_Placa(veiculo);
 
@@ -56,7 +56,7 @@ public class AgendamentoServiceImpl implements IAgendamentoService {
 
 	@Override
 	public Agendamento registrar(AgendamentoDto agendamentoDTO) {
-		Veiculo listarPorPlaca = veiculoServiceImpl.listarPorPlaca(agendamentoDTO.getVeiculo_placa());
+		Veiculo listarPorPlaca = veiculoServiceImpl.listarPorPlaca(agendamentoDTO.getVeiculo_Placa());
 		Agendamento retorno = new Agendamento();
 
 		if ( listarPorPlaca != null) {
