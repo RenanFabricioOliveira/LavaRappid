@@ -23,8 +23,8 @@ public class LavaRapidoServiceImpl implements ILavaRapidoService{
 		lavaRapido.setIdLavarapido(lavaRapidoDto.getIdLavarapido());
 		lavaRapido.setNome(lavaRapidoDto.getNome());
 		lavaRapido.setEmail(lavaRapidoDto.getEmail());
-		lavaRapido.setSenha(lavaRapidoDto.getEndereço());
-		lavaRapido.setEndereco(lavaRapidoDto.getEndereço());
+		lavaRapido.setSenha(lavaRapidoDto.getEndereco());
+		lavaRapido.setEndereco(lavaRapidoDto.getEndereco());
 		lavaRapido.setCep(lavaRapidoDto.getCep());
 		lavaRapido.setTelefone(lavaRapidoDto.getTelefone());
 		

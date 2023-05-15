@@ -15,7 +15,7 @@ public class LavaRapidoDto {
 	
 	private String telefone;
 	
-	private String endereço;
+	private String endereco;
 	
 	private String cep;
 
