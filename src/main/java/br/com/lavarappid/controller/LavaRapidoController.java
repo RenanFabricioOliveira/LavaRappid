@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -28,13 +29,18 @@ public class LavaRapidoController {
 	public List<LavaRapido> listar() {
 		return service.listar();
 	}
+	
+	@GetMapping(path = {"/{id}"})
+	public LavaRapido listarPorId(@PathVariable ("id") int id) {
+		return service.listarPorId(id);
+	}	
 
 	@PostMapping
 	public LavaRapido registrar(@RequestBody LavaRapidoDto lavaRapidoDto) {
 		return service.registrar(lavaRapidoDto);
 	}
 
-	@GetMapping(path = { "/{id}" })
+	@PutMapping(path = { "/{id}" })
 	public LavaRapido atualizar(@RequestBody LavaRapidoDto lavaRapidoDto, @PathVariable("id") int id) {
 		lavaRapidoDto.setIdLavarapido(id);
 		return service.atualizar(lavaRapidoDto);

@@ -52,8 +52,14 @@ public class ServicoController {
 	@GetMapping(path = {"/{id}"})
 	public Servico listarPorId(@PathVariable ("id") int id) {
 		return service.listarPorId(id);
-	}
-	
-	
+	}	
 
 }
+
+
+
+
+
+
+
+

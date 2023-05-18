@@ -69,26 +69,3 @@ public class VeiculoController {
 		return new ResponseEntity<Veiculo>(v, HttpStatus.OK);
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
